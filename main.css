@@ -1,0 +1,48 @@
+@import url("/css/cover.css");
+@import url("/css/indicador.css");
+@import url("/css/details.css");
+@import url("/css/modal.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --borderColor: #ba111f;
+  --backgroundColor: #dc0a2d;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #4ba3da;
+  /* overflow: hidden; */
+}
+
+.main {
+  max-width: 384px;
+  width: 100%;
+  height: 556px;
+  position: relative;
+  perspective: 1000px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main:is(:hover, ) .cover-front {
+  transform: rotateY(180deg);
+}
+.main:is(:hover) .cover-back {
+  transform: rotateY(0);
+}
+
+@media screen and(max-width: 450px) {
+  body {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#4ba3da" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="/assets/pokebola.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="main.js" defer type="module"></script>
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <main class="main">
+      <secction class="indicador">
+        <div class="container-circle">
+          <div class="circle-big" id="animation"></div>
+          <div class="circles-small">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+          </div>
+        </div>
+      </secction>
+      <section class="cover-info">
+        <article class="container-figure">
+          <figure class="figure">
+            <img src="" alt="" id="image-pokemon" />
+          </figure>
+          <div class="bottom-circle">
+            <div class="circle-red-botom"></div>
+            <div class="circle-red-botom"></div>
+          </div>
+          <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </article>
+        <div class="container-circle-elipse">
+          <button class="circle-main-big" id="random"></button>
+          <div class="elipsis">
+            <div class="elipsi e-yellow"></div>
+            <div class="elipsi e-blue"></div>
+          </div>
+        </div>
+        <section class="info-detaills">
+          <input type="text" placeholder="¿Quien es ese pokemon?" id="input" />
+          <article class="description">
+            <p id="name" class="description-name"></p>
+            <p id="description"></p>
+          </article>
+          <section class="controls">
+            <div class="control control-v">
+              <button class="control-a up" id="up">
+                <img src="/assets/arrow-up.svg" alt="arrow" />
+              </button>
+              <button class="control-a down" id="down">
+                <img src="/assets/arrow-down.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="control control-h">
+              <button class="control-a left" id="left">
+                <img src="/assets/arrow-left.svg" alt="arrow" />
+              </button>
+              <button class="control-a right" id="right">
+                <img src="/assets/arrow-right.svg" alt="arrow" />
+              </button>
+            </div>
+          </section>
+        </section>
+      </section>
+      <div class="cover-front">front</div>
+      <section class="cover-back">
+        <article class="estidisticas">
+          <canvas id="canva" width="200" height="200"></canvas>
+        </article>
+      </section>
+    </main>
+    <div class="modal" id="modal">
+      <p>El Nombre o Id que ingresaste no se encontro</p>
+      <button id="modal-btn">Buscar Nuevamente</button>
+    </div>
+  </body>
+</html>

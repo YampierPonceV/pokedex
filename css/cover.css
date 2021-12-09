@@ -1,0 +1,48 @@
+.cover-info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: var(--backgroundColor);
+  border-right: 4px solid var(--borderColor);
+  clip-path: polygon(70% 1%, 100% 0, 100% 100%, 0 100%, 0 5%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 24px;
+  padding-top: 35px;
+}
+
+.cover-front,
+.cover-back {
+  width: inherit;
+  height: inherit;
+  background: var(--backgroundColor);
+  position: absolute;
+  transition: 1s transform;
+  backface-visibility: hidden;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cover-front {
+  z-index: 3;
+  transform-origin: right center;
+  clip-path: polygon(70% 1%, 100% 0, 100% 100%, 0 100%, 0 5%);
+}
+
+.cover-back {
+  z-index: 2;
+  padding: 24px;
+  padding-top: 35px;
+  left: 100%;
+  transform-origin: left center;
+  transform: rotateY(-180deg);
+  border-left: 4px solid var(--borderColor);
+  clip-path: polygon(30% 0, 100% 5%, 100% 100%, 0 100%, 0 0);
+}
+
+.estidisticas {
+  width: 100%;
+  height: 100%;
+  background: #163355;
+  border-radius: 8px;
+}

@@ -1,0 +1,74 @@
+.indicador {
+  position: absolute;
+  top: -44px;
+  width: inherit;
+  height: 72px;
+  background: var(--backgroundColor);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 30% 100%, 0 100%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.indicador::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: black;
+  clip-path: polygon(70% 50%, 100% 38%, 100% 100%, 0 100%, 0 92%);
+  z-index: 5;
+}
+
+.container-circle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.circle-big {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: steelblue;
+  margin-left: 24px;
+  border: 2px solid white;
+}
+
+.circle-big-animation {
+  box-shadow: 0 0 8px white;
+  animation-name: circulo;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: scale(0.9);
+}
+
+@keyframes circulo {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.circles-small {
+  display: flex;
+  gap: 8px;
+}
+.circles-small div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #f4647d;
+}
+.yellow {
+  background: #feef8d;
+}
+
+.green {
+  background: #5baa67;
+}
