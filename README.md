@@ -1,5 +1,9 @@
 # Pokedex
 
-![demo](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png)
+## **Demo**
+
+_Proyecto realizado con finex de aprendizaje_
+
+![demo](./assets/demo.gif)
 
 <cite>Pokedex</cite> diseño de [Proyectos - LeonidasEsteban](https://leonidasesteban.com).

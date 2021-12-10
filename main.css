@@ -10,8 +10,19 @@
 }
 
 :root {
-  --borderColor: #ba111f;
-  --backgroundColor: #dc0a2d;
+  --white: #fffffe;
+  --black: #300f16;
+  --border: #9e0f2c;
+  --primary: #dc0a2d;
+  --celeste: #4ba3da;
+  --secondary: #163355;
+  --yellow: #fecb2f;
+  --fondoTexto: #51ae5f;
+  --modalBgbtn: #516beb;
+  --modalBg: rgba(0, 0, 0, 0.692);
+  --body1: 400 0.75rem/1.5rem Roboto;
+  --body3: 400 0.5rem/0.4556451737880707rem Roboto;
+  --body2-regular: 400 0.75rem/1.375rem Space Mono;
 }
 
 body {
@@ -20,8 +31,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #4ba3da;
-  /* overflow: hidden; */
+  background: var(--celeste);
+  font: var(--body1);
 }
 
 .main {
