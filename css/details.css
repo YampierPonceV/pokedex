@@ -139,13 +139,14 @@
   position: absolute;
   left: 100%;
   margin-left: 25px;
-  top: 0;
+  top: -20px;
   width: 82px;
   height: 82px;
 }
 
 .control {
   background: var(--secondary);
+  border-radius: 4px;
 }
 
 .control-v {
