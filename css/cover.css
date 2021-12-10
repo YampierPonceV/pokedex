@@ -29,6 +29,23 @@
 .cover-front {
   z-index: 3;
   transform-origin: right center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cover-front .banner {
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 5px var(--yellow));
+}
+
+.cover-front .pikachu {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  filter: drop-shadow(0 0 5px var(--yellow));
 }
 
 .cover-back {
